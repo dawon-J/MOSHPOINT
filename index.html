@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mosh point</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url(pause.png);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 50%;
+        }
+
+        .buttons {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .container {
+            position: relative;
+            cursor: pointer;
+            margin-right: 15px; /* 여백 추가 */
+        }
+
+        .overlay1,
+        .overlay2 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-size: contain;
+        }
+
+        .overlay1 {
+            background-image: url(intro_hover.png);
+            background-repeat: no-repeat;
+        }
+
+        .overlay2 {
+            background-image: url(doing_hover.png);
+            background-repeat: no-repeat;
+        }
+
+        .container:hover .overlay1,
+        .container:hover .overlay2 {
+            opacity: 1;
+        }
+
+        .overlay1, .overlay2 {
+            pointer-events: none;
+        }
+
+        .container:hover .overlay1,
+        .container:hover .overlay2 {
+            pointer-events: auto;
+        }
+
+        .overlay1:hover,
+        .overlay2:hover {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+   <img class="logo" src="logotype_vertical.png">
+   <div class="buttons">
+        <div class="container" onclick="window.location.href='intro.html';">
+            <img class="intro" src="introduction.png" alt="mosh point란?">
+            <div class="overlay1"></div>
+        </div>
+        <div class="container" onclick="window.location.href='doing.html';">
+            <img class="doing" src="domoshpointing.png" alt="mosh pointing 직접 해보기">
+            <div class="overlay2"></div>
+        </div>
+   </div>
+</body>
+</html>

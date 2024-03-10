@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduction</title>
+    <style>
+        body {
+            background-image: url(pause.png);
+            color: #AAAAAA;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .bar {
+            position: fixed;
+            left: 0;
+            width: 245.84px; /* 편의에 따라 조절 가능 */
+            height: 100%;
+            background-image: url(menu_bar.png);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            padding-top: 27px; /* 로고와의 여백 조절 */
+        }
+
+        .logo {
+            width: 170px; /* 편의에 따라 조절 가능 */
+            margin-bottom: 40px; /* 로고와 메뉴 사이 여백 조절 */
+            margin-left: 27px;
+        }
+
+        .folda {
+            margin-top: 300px;
+            margin-left: 25px;
+        }
+
+        .copyright {
+            margin-left: 25px;
+            color: #828282;
+        }
+
+        .intro, .doing {
+            margin-bottom: 40px; /* 메뉴 아이템 사이 여백 조절 */
+            margin-top: 40px;
+            margin-left: 27px;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background-image: url(doing_active.png);
+            background-repeat: no-repeat; /* 이미지 반복 없음 */
+            transition: opacity 0.3s ease; /* 호버 시 부드러운 효과를 위한 트랜지션 */
+        }
+
+        .doing {
+            position: relative; /* 추가된 부분 */
+        }
+
+        .doing:hover .overlay {
+            opacity: 1;
+        }
+
+        .content {
+            margin-left: 350px;
+        }
+
+        .what {
+            margin-top: 70px;
+        }
+
+        .need {
+            margin-top: 200px;
+        }
+
+        .content p {
+            margin-top: 40px;
+            padding-left: 10px;
+            font-size: 1.2rem;
+            color: rgb(43, 43, 43);
+            line-height: 170%;
+        }
+
+        .show_more {
+            text-align: center;
+        }
+
+        .more {
+            margin-top: 300px;
+        }
+
+        .profile {
+            margin-top: 50px;
+            margin-bottom: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <a href="index.html"><img class="logo" src="logotype_vertical.png" alt="Logo"></a>
+        <div class="intro"><a href="intro.html"><img src="intro_active.png"></a></div>
+        <div class="doing">
+            <a href="doing.html">
+                <img src="doing_deactive.png">
+                <div class="overlay"></div>
+            </a>
+        </div>
+        <div class="folda">
+            <a href="https://www.instagram.com/fol.da_/" target="_blank">
+            <img src="@folda.png">
+            </a>
+        </div>
+        <div class="copyright">
+            <p>
+            ⓒ 2023. Dawon<br>
+            all rights reserved.
+        </p>
+        </div>
+    </div>
+
+
+    <div class="content">
+       <img class="what" src="what.png">
+            <p>MOSH POINT는 ‘Datamosh’라는 단어에서 파생되었습니다.<br>
+                Datamosh란 동영상 압축 알고리즘에서 발생하는 문제로, 프레임 간의 차이가<br>
+                손실되거나 깨질 때 발생합니다. 이로 인해 동영상 재생 중에 예상치 못한 비디오<br>
+                아티팩트가 나타나며, 블록 또는 픽셀이 이동하거나 왜곡된 것처럼 보일 수 있습니다.<br>
+                때로는 의도적으로 예술 작품에 사용되어, 독특하고 실험적인 비디오 아트를<br>
+                만들기 위해 프레임 간의 차이를 조작하는 기술로 활용됩니다.</p>
+        <img class="need" src="need.png">
+            <p>
+                우리는 일상에서 수많은 고뇌의 시간을 마주합니다. 동영상 압축 알고리즘에서<br>
+                Datamosh 현상이 일어날 때 프레임이 손상되며 블록이나 픽셀이 왜곡된 것으로 보이는<br>
+                것처럼, 고뇌의 고뇌를 거듭하며 과부화된 우리의 머리는 어느 순간 확! 멈춰 버리곤 하죠.<br>
+                우리는 과도한 스트레스로 인해 몸이 정상적으로 작동하지 않을 때의 그 순간을 견딜 수<br>
+                없어합니다. 벗어나려 발버둥칠수록 더 깊은 곳으로 추락하거나, 벗어나기 위한 시도를 할<br>
+                새도 없이 잠식되어 버리기 일쑤입니다.
+            </p>
+            <p>
+                그러나 고뇌에 빠진 우리에게 멈춤의 시간은 꼭 필요합니다. <br>
+                우리가 우울과 무기력에잠식되는 이유는, 멈춤의 시간을 우리에게 필요한 것으로 <br>
+                인정하지 않고무작정 벗어나야 하는 것으로 치부해버리는 태도 때문일 수 있습니다.
+            </p>
+            <p>
+                때문에 필자는 끝없이 이어지는 고뇌의 시간 속에서 잠시 눈을 감고 멈추는 시간을<br>
+                가져도 된다는 메시지를 당신에게 전달하고자 합니다. 웹 상에 등장하는 인물에게,<br>
+                웹 속에 비친 자신에게 멈춤의 시간을 부여해 보세요. 
+            </p>
+
+        <div class="show_more">
+            <img class="more" src="more_works.png">
+            <div class="profile_container">
+                <a href="https://www.instagram.com/fol.da_/" target="_blank">
+                    <img class="profile" src="folda_big.png">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // 추가적인 스크립트가 있을 경우 여기에 추가
+    </script>
+</body>
+</html>

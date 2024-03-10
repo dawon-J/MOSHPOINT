@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduction</title>
+    <style>
+        body {
+            background-image: url(pause.png);
+            color: #AAAAAA;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .bar {
+            position: fixed;
+            left: 0;
+            width: 245.84px;
+            height: 100%;
+            background-image: url(menu_bar2.png);
+            background-size: cover;
+            flex-direction: column;
+            padding-top: 27px;
+        }   
+        .logo {
+            width: 170px; /* 편의에 따라 조절 가능 */
+            margin-bottom: 40px; /* 로고와 메뉴 사이 여백 조절 */
+            margin-left: 27px;
+        }
+
+        .folda {
+            margin-top: 240px;
+            margin-left: 27px;
+        }
+
+        .copyright {
+            margin-left: 27px;
+            color: #828282;
+        }
+
+        .intro,
+        .doing,
+        .other,
+        .yourself,
+        .content_other,
+        .content_yourself {
+            margin-bottom: 5px;
+            margin-left: 27px;
+            position: relative;
+        }
+
+        .intro{
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .doing{
+            padding-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .overlay1,
+        .overlay2,
+        .overlay3,
+        .overlay4,
+        .overlay5 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            background-repeat: no-repeat;
+        }
+
+        .overlay1 {
+            background-image: url(intro_active.png);
+        }
+
+        .overlay2 {
+            background-image: url(other_hover_small.png);
+        }
+
+        .overlay3 {
+            background-image: url(yourself_hover_small.png);
+        }
+
+        .intro:hover .overlay1 {
+            opacity: 1;
+        }
+
+        .other:hover .overlay2,
+        .yourself:hover .overlay3 {
+            opacity: 1;
+        }
+
+        .content {
+            margin-left: 350px; 
+        }
+
+        .title {
+            margin-top: 70px;
+            margin-bottom: 100px;
+        }
+        .buttons img {
+            margin-bottom: 10px;
+        }
+
+        .overlay4 {
+            background-image: url(doing_other_hover.png);
+        }
+        .overlay5 {
+            background-image: url(doing_yourself_hover.png);
+        }
+
+        .content_other:hover .overlay4,
+        .content_yourself:hover .overlay5 {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <a href="index.html"><img class="logo" src="logotype_vertical.png" alt="Logo"></a>
+        <div class="intro">
+            <a href="intro.html">
+                <img src="intro_deactive.png">
+                <div class="overlay overlay1"></div>
+            </a>
+        </div>
+        <div class="doing">
+            <a href="doing.html">
+                <img src="doing_active.png">
+            </a>
+        </div>
+        <div class="other">
+            <a href="other.html">
+                <img src="other_before_small.png">
+                <div class="overlay overlay2"></div>
+            </a>
+        </div>
+        <div class="yourself">
+            <a href="yourself.html">
+                <img src="yourself_before_small.png">
+                <div class="overlay overlay3"></div>
+            </a>
+        </div>
+        <div class="folda">
+            <a href="https://www.instagram.com/fol.da_/" target="_blank">
+                <img src="@folda.png">
+            </a>
+        </div>
+        <div class="copyright">
+            <p>
+                ⓒ 2023. Dawon<br>
+                all rights reserved.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <img class="title" src="MOSHPOINTING.png">
+        <div class="buttons">
+            <div class="content_other">
+                <a href="other.html">
+                    <img src="doing_other_before.png">
+                    <div class="overlay overlay4"></div>
+                </a>
+            </div>
+            <div class="content_yourself">
+                <a href="yourself.html">
+                    <img src="doing_yourself_before.png">
+                    <div class="overlay overlay5"></div>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        // 추가적인 스크립트가 있을 경우 여기에 추가
+    </script>
+</body>
+</html>
